@@ -18,8 +18,8 @@ It demonstrates HTML, CSS, and JavaScript skills to build a responsive and funct
 
 ## Authors
 - **Amadu Bah** – Lead Developer  
-- **nmicholas davies Two** – Frontend Support  
-- **makuta turay** – Documentation & Testing  
+- **Nicholas davies Two** – Frontend Support  
+- **Makuta turay** – Documentation & Testing  
 
 ## Screenshots
 
