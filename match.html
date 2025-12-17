@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matches - Football Agency Sierra Leone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/logo.png" alt="Football Agency Sierra Leone Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">Football Agency</span>
+                <span class="logo-sub">Sierra Leone</span>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+            <li><a href="matches.html" class="active"><i class="fas fa-futbol"></i> Matches</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Matches Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="images/stadium.jpg" alt="Football stadium with players" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <h1>Matches & Results</h1>
+            <p>Follow our players' performances across all competitions. Live scores, fixtures, and league tables.</p>
+        </div>
+    </section>
+
+    <!-- Live Match Section -->
+    <section class="section" id="live">
+        <div class="live-match-banner card-3d">
+            <div class="live-indicator">
+                <span class="live-dot"></span>
+                LIVE NOW
+            </div>
+            <div class="match-teams">
+                <div class="team">
+                    <div class="team-logo-img">
+                        <img src="images/Fc_kallon.jpeg" alt="FC Kallon SL Logo">
+                    </div>
+                    <h3>FC Kallon</h3>
+                    <div class="team-score" id="team1-score">2</div>
+                </div>
+                <div class="match-info">
+                    <div class="match-time">65'</div>
+                    <div class="match-status">Second Half</div>
+                    <div class="match-competition">Premier League</div>
+                </div>
+                <div class="team">
+                    <div class="team-score" id="team2-score">1</div>
+                    <h3>Bo Rangers</h3>
+                    <div class="team-logo-img">
+                        <img src="images/Bo_rangers.jpeg" alt="Bo Rangers Logo">
+                    </div>
+                </div>
+            </div>
+            <div class="match-events">
+                <div class="event">
+                    <span class="event-time">23'</span>
+                    <span class="event-text">Goal! Mohamed Kamara (FSL)</span>
+                </div>
+                <div class="event">
+                    <span class="event-time">45+2'</span>
+                    <span class="event-text">Goal! A. Conteh (BR)</span>
+                </div>
+                <div class="event">
+                    <span class="event-time">52'</span>
+                    <span class="event-text">Goal! I. Sesay (FSL)</span>
+                </div>
+            </div>
+            <button class="btn-3d watch-live">
+                <i class="fas fa-play"></i> Watch Live Stream
+            </button>
+        </div>
+    </section>
+
+    <!-- Matches Tabs -->
+    <section class="section">
+        <div class="matches-tabs">
+            <button class="match-tab active" data-tab="fixtures">Upcoming Fixtures</button>
+            <button class="match-tab" data-tab="results">Recent Results</button>
+            <button class="match-tab" data-tab="league">League Table</button>
+            <button class="match-tab" data-tab="stats">Statistics</button>
+        </div>
+        
+        <!-- Fixtures Tab -->
+        <div class="tab-content active" id="fixtures-tab">
+            <div class="fixtures-container">
+                <div class="fixture-card card-3d">
+                    <div class="fixture-header">
+                        <span class="fixture-date">Saturday, Dec 15, 2025</span>
+                        <span class="fixture-time">16:00 GMT</span>
+                    </div>
+                    <div class="fixture-teams">
+                        <div class="team">
+                            <div class="team-logo">EW</div>
+                            <img src="images/east.png" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                            <h4>East End Lions</h4>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <h4>Mighty Blackpool</h4>
+                            <div class="team-logo">MB</div>
+                            <img src="images/mightblack.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="fixture-details">
+                        <p><i class="fas fa-trophy"></i>  Sierra Leone Premier League - Matchday 14</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Siaka Stevens Stadium, Freetown</p>
+                    </div>
+                    <div class="fixture-actions">
+                        <button class="btn-3d btn-small"><i class="far fa-calendar-plus"></i> Add to Calendar</button>
+                        <button class="btn-3d btn-small btn-secondary"><i class="fas fa-ticket-alt"></i> Buy Tickets</button>
+                    </div>
+                </div>
+                
+                <div class="fixture-card card-3d">
+                    <div class="fixture-header">
+                        <span class="fixture-date">Wednesday, Dec 18, 2025</span>
+                        <span class="fixture-time">18:30 GMT</span>
+                    </div>
+                    <div class="fixture-teams">
+                        <div class="team">
+                            <div class="team-logo">KR</div>
+                            <img src="images/kamboi.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                            <h4>Kamboi Eagles</h4>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <h4>Ports Authority</h4>
+                            <div class="team-logo">PA</div>
+                            <img src="images/port authority.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+            <div class="logo-text">
+                        </div>
+                    </div>
+                    <div class="fixture-details">
+                        <p><i class="fas fa-trophy"></i> Premier League - Matchday 15</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Korhogo Field, Kenema</p>
+                    </div>
+                    <div class="fixture-actions">
+                        <button class="btn-3d btn-small"><i class="far fa-calendar-plus"></i> Add to Calendar</button>
+                        <button class="btn-3d btn-small btn-secondary"><i class="fas fa-ticket-alt"></i> Buy Tickets</button>
+                    </div>
+                </div>
+                
+                <div class="fixture-card card-3d">
+                    <div class="fixture-header">
+                        <span class="fixture-date">Sunday, Dec 22, 2025</span>
+                        <span class="fixture-time">15:00 GMT</span>
+                    </div>
+                    <div class="fixture-teams">
+                        <div class="team">
+                            <div class="team-logo">FSL</div>
+                            <img src="images/diamon.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                            <h4>Diamon stars </h4>
+                        </div>
+                        <div class="vs">VS</div>
+                        <div class="team">
+                            <h4>Central Parade</h4>
+                            <div class="team-logo">CP</div>
+                            <img src="images/parade.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="fixture-details">
+                        <p><i class="fas fa-trophy"></i> FA Cup - Quarter Final</p>
+                        <p><i class="fas fa-map-marker-alt"></i> National Stadium, Freetown</p>
+                    </div>
+                    <div class="fixture-actions">
+                        <button class="btn-3d btn-small"><i class="far fa-calendar-plus"></i> Add to Calendar</button>
+                        <button class="btn-3d btn-small btn-secondary"><i class="fas fa-ticket-alt"></i> Buy Tickets</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="calendar-widget card-3d">
+                <h3>December 2025 Match Calendar</h3>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <button class="calendar-nav"><i class="fas fa-chevron-left"></i></button>
+                        <span class="calendar-month">December 2025</span>
+                        <button class="calendar-nav"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-grid">
+                        <div class="calendar-day">Mon</div>
+                        <div class="calendar-day">Tue</div>
+                        <div class="calendar-day">Wed</div>
+                        <div class="calendar-day">Thu</div>
+                        <div class="calendar-day">Fri</div>
+                        <div class="calendar-day">Sat</div>
+                        <div class="calendar-day">Sun</div>
+                        
+                        <div class="calendar-date">1</div>
+                        <div class="calendar-date">2</div>
+                        <div class="calendar-date">3</div>
+                        <div class="calendar-date">4</div>
+                        <div class="calendar-date">5</div>
+                        <div class="calendar-date match-day">6</div>
+                        <div class="calendar-date">7</div>
+                        <div class="calendar-date">8</div>
+                        <div class="calendar-date">9</div>
+                        <div class="calendar-date">10</div>
+                        <div class="calendar-date">11</div>
+                        <div class="calendar-date">12</div>
+                        <div class="calendar-date">13</div>
+                        <div class="calendar-date">14</div>
+                        <div class="calendar-date match-day">15</div>
+                        <div class="calendar-date">16</div>
+                        <div class="calendar-date">17</div>
+                        <div class="calendar-date match-day">18</div>
+                        <div class="calendar-date">19</div>
+                        <div class="calendar-date">20</div>
+                        <div class="calendar-date">21</div>
+                        <div class="calendar-date match-day">22</div>
+                        <div class="calendar-date">23</div>
+                        <div class="calendar-date">24</div>
+                        <div class="calendar-date">25</div>
+                        <div class="calendar-date">26</div>
+                        <div class="calendar-date">27</div>
+                        <div class="calendar-date">28</div>
+                        <div class="calendar-date">29</div>
+                        <div class="calendar-date">30</div>
+                        <div class="calendar-date">31</div>
+                    </div>
+                </div>
+                <div class="calendar-legend">
+                    <div class="legend-item">
+                        <span class="legend-color match-color"></span>
+                        <span>Match Day</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Results Tab -->
+        <div class="tab-content" id="results-tab">
+            <div class="results-container">
+                <div class="result-card card-3d">
+                    <div class="result-header">
+                        <span class="result-date">Dec 7, 2025</span>
+                        <span class="result-competition">Premier League</span>
+                    </div>
+                    <div class="result-teams">
+                        <div class="team">
+                            <div class="team-logo">FSL</div>
+                            <img src="images/port authority.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                            <h4>Diamon stars </h4>
+                            <div class="team-score win">2</div>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <div class="team-score lose">1</div>
+                            <h4>Bo Rangers</h4>
+                            <div class="team-logo">BR</div>
+                            <img src="images/Bo_rangers.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="result-details">
+                        <p><i class="fas fa-user"></i> Scorers: Kamara (23'), Sesay (52')</p>
+                        <p><i class="fas fa-users"></i> Attendance: 12,450</p>
+                        <p><i class="fas fa-whistle"></i> Referee: S. Bangura</p>
+                    </div>
+                    <button class="btn-3d btn-small"><i class="fas fa-play-circle"></i> Watch Highlights</button>
+                </div>
+                
+                <div class="result-card card-3d">
+                    <div class="result-header">
+                        <span class="result-date">Dec 4, 2025</span>
+                        <span class="result-competition">Premier League</span>
+                    </div>
+                    <div class="result-teams">
+                        <div class="team">
+                            <div class="team-logo">EW</div>
+                            <img src="images/east.png" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                            <h4>East End Lions</h4>
+                            <div class="team-score draw">0</div>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <div class="team-score draw">0</div>
+                            <h4>Mighty Blackpool</h4>
+                            <div class="team-logo">MB</div>
+                            <img src="images/mightblack.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        </div>
+                    </div>
+                    <div class="result-details">
+                        <p><i class="fas fa-user"></i> Scorers: None</p>
+                        <p><i class="fas fa-users"></i> Attendance: 8,920</p>
+                        <p><i class="fas fa-whistle"></i> Referee: M. Conteh</p>
+                    </div>
+                    <button class="btn-3d btn-small"><i class="fas fa-play-circle"></i> Watch Highlights</button>
+                </div>
+                
+                <div class="result-card card-3d">
+                    <div class="result-header">
+                        <span class="result-date">Nov 30, 2025</span>
+                        <span class="result-competition">Premier League</span>
+                    </div>
+                    <div class="result-teams">
+                        <div class="team">
+                            <div class="team-logo">KR</div>
+                            <h4>Kamboi Eagles</h4>
+                            <div class="team-score lose">1</div>
+                        </div>
+                        <div class="vs">-</div>
+                        <div class="team">
+                            <div class="team-score win">3</div>
+                            <h4>Ports Authority</h4>
+                            <div class="team-logo">PA</div>
+                        </div>
+                    </div>
+                    <div class="result-details">
+                        <p><i class="fas fa-user"></i> Scorers: Jalloh (65')</p>
+                        <p><i class="fas fa-users"></i> Attendance: 7,540</p>
+                        <p><i class="fas fa-whistle"></i> Referee: A. Kamara</p>
+                    </div>
+                    <button class="btn-3d btn-small"><i class="fas fa-play-circle"></i> Watch Highlights</button>
+                </div>
+            </div>
+            
+            <div class="stats-summary card-3d">
+                <h3>Recent Form</h3>
+                <div class="form-indicators">
+                    <div class="form-team">
+                        <h4>Diamon stars</h4>
+                        <div class="form-sequence">
+                            <span class="form-win">W</span>
+                            <span class="form-draw">D</span>
+                            <span class="form-win">W</span>
+                            <span class="form-lose">L</span>
+                            <span class="form-win">W</span>
+                        </div>
+                    </div>
+                    <div class="form-team">
+                        <h4>East End Lions</h4>
+                        <div class="form-sequence">
+                            <span class="form-draw">D</span>
+                            <span class="form-win">W</span>
+                            <span class="form-win">W</span>
+                            <span class="form-draw">D</span>
+                            <span class="form-draw">D</span>
+                        </div>
+                    </div>
+                    <div class="form-team">
+                        <h4>Bo Rangers</h4>
+                        <div class="form-sequence">
+                            <span class="form-lose">L</span>
+                            <span class="form-win">W</span>
+                            <span class="form-draw">D</span>
+                            <span class="form-win">W</span>
+                            <span class="form-win">W</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="top-scorers">
+                    <h3>Top Scorers</h3>
+                    <div class="scorer-list">
+                        <div class="scorer">
+                            <img src="images/player1.jpg" alt="Mohamed Kamara" class="scorer-img">
+                            <div class="scorer-info">
+                                <span class="scorer-name">Mohamed Kamara</span>
+                                <span class="scorer-goals">15 goals</span>
+                            </div>
+                        </div>
+                        <div class="scorer">
+                            <img src="images/player6.jpg" alt="Mamadu Jalloh" class="scorer-img">
+                            <div class="scorer-info">
+                                <span class="scorer-name">Mamadu Jalloh</span>
+                                <span class="scorer-goals">12 goals</span>
+                            </div>
+                        </div>
+                        <div class="scorer">
+                            <img src="images/player3.jpg" alt="Samuel Bangura" class="scorer-img">
+                            <div class="scorer-info">
+                                <span class="scorer-name">Samuel Bangura</span>
+                                <span class="scorer-goals">8 goals</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- League Table Tab -->
+        <div class="tab-content" id="league-tab">
+            <div class="league-table-container card-3d">
+                <div class="table-controls">
+                    <select id="leagueSelect">
+                        <option value="premier">Premier League</option>
+                        <option value="division1">Division One</option>
+                        <option value="youth">Youth League</option>
+                    </select>
+                    <select id="seasonSelect">
+                        <option value="2025">2025/26 Season</option>
+                        <option value="2024">2024/25 Season</option>
+                        <option value="2023">2023/24 Season</option>
+                    </select>
+                </div>
+                
+                <div class="table-responsive">
+                    <table class="league-table">
+                        <thead>
+                            <tr>
+                                <th>Pos</th>
+                                <th>Team</th>
+                                <th>P</th>
+                                <th>W</th>
+                                <th>D</th>
+                                <th>L</th>
+                                <th>GF</th>
+                                <th>GA</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                                <th>Form</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="highlighted">
+                                <td>1</td>
+                                <td class="team-cell">
+                                    <div class="team-logo-small">FSL</div>
+                                    Diamon stars
+                                </td>
+                                <td>12</td>
+                                <td>9</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>24</td>
+                                <td>9</td>
+                                <td>+15</td>
+                                <td>29</td>
+                                <td class="form-cell">
+                                    <span class="form-win">W</span>
+                                    <span class="form-draw">D</span>
+                                    <span class="form-win">W</span>
+                                    <span class="form-lose">L</span>
+                                    <span class="form-win">W</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td class="team-cell">
+                                    <div class="team-logo-small">EW</div>
+                                    East End Lions
+                                </td>
+                                <td>12</td>
+                                <td>8</td>
+                                <td>3</td>
+                                <td>1</td>
+                                <td>20</td>
+                                <td>8</td>
+                                <td>+12</td>
+                                <td>27</td>
+                                <td class="form-cell">
+                                    <span class="form-draw">D</span>
+                                    <span class="form-win">W</span>
+                                    <span class="form-win">W</span>
+                                    <span class="form-draw">D</span>
+                                    <span class="form-draw">D</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td class="team-cell">
+                                    <div class="team-logo-small">BR</div>
+                                    Bo Rangers
+                                </td>
+                                <td>12</td>
+                                <td>7</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>18</td>
+                                <td>8</td>
+                                <td>+10</td>
+                                <td>24</td>
+                                <td class="form-cell">
+                                    <span class="form-lose">L</span>
+                                    <span class="form-win">W</span>
+                                    <span class="form-draw">D</span>
+                                    <span class="form-win">W</span>
+                                    <span class="form-win">W</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div class="table-legend">
+                    <div class="legend-item">
+                        <div class="legend-color champions"></div>
+                        <span> Sierra Leone Champions League</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color europa"></div>
+                        <span>Community League</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color relegation"></div>
+                        <span>Relegation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Statistics Tab -->
+        <div class="tab-content" id="stats-tab">
+            <div class="stats-container">
+                <div class="stat-card-large card-3d">
+                    <h3><i class="fas fa-futbol"></i> Team Statistics</h3>
+                    <div class="stat-grid">
+                        <div class="stat-item-large">
+                            <div class="stat-icon-large"><i class="fas fa-futbol"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-value-large">24</span>
+                                <span class="stat-label-large">Most Goals</span>
+                                <span class="stat-team">Freetown SL</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <div class="stat-icon-large"><i class="fas fa-shield-alt"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-value-large">8</span>
+                                <span class="stat-label-large">Best Defense</span>
+                                <span class="stat-team">East End Lions</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <div class="stat-icon-large"><i class="fas fa-trophy"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-value-large">9</span>
+                                <span class="stat-label-large">Most Wins</span>
+                                <span class="stat-team">Freetown SL</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <div class="stat-icon-large"><i class="fas fa-users"></i></div>
+                            <div class="stat-content">
+                                <span class="stat-value-large">12,450</span>
+                                <span class="stat-label-large">Highest Attendance</span>
+                                <span class="stat-team">FSL vs BR</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="stat-card-large card-3d">
+                    <h3><i class="fas fa-chart-line"></i> Player Statistics</h3>
+                    <div class="stat-grid">
+                        <div class="stat-item-large">
+                            <img src="images/player1.jpg" alt="Mohamed Kamara" class="stat-player-img">
+                            <div class="stat-content">
+                                <span class="stat-value-large">15</span>
+                                <span class="stat-label-large">Top Scorer</span>
+                                <span class="stat-team">M. Kamara</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <img src="images/player3.jpg" alt="Samuel Bangura" class="stat-player-img">
+                            <div class="stat-content">
+                                <span class="stat-value-large">15</span>
+                                <span class="stat-label-large">Most Assists</span>
+                                <span class="stat-team">S. Bangura</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <img src="images/player4.jpg" alt="Alusine Conteh" class="stat-player-img">
+                            <div class="stat-content">
+                                <span class="stat-value-large">18</span>
+                                <span class="stat-label-large">Clean Sheets</span>
+                                <span class="stat-team">A. Conteh</span>
+                            </div>
+                        </div>
+                        <div class="stat-item-large">
+                            <img src="images/player2.jpg" alt="Ibrahim Sesay" class="stat-player-img">
+                            <div class="stat-content">
+                                <span class="stat-value-large">Dec</span>
+                                <span class="stat-label-large">Player of Month</span>
+                                <span class="stat-team">I. Sesay</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upcoming Important Matches -->
+    <section class="section section-dark">
+        <div class="section-title">
+            <h2>Upcoming Important Matches</h2>
+            <p>Key fixtures that you won't want to miss</p>
+        </div>
+        
+        <div class="important-matches">
+            <div class="important-match card-3d">
+                <div class="match-highlight">
+                    <span class="highlight-tag">Derby Match</span>
+                    <h3>Freetown Derby</h3>
+                </div>
+                <div class="match-teams">
+                    <div class="team">
+                        <div class="team-logo">FSL</div>
+                        <img src="images/diamon.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        <h4>Diamon stars FC</h4>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team">
+                        <h4>East End Lions</h4>
+                        <div class="team-logo">EW</div>
+                        <img src="images/east.png" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                    </div>
+                </div>
+                <div class="match-details">
+                    <p><i class="far fa-calendar"></i> Jan 5, 2026 | 18:00 GMT</p>
+                    <p><i class="fas fa-map-marker-alt"></i> National Stadium</p>
+                </div>
+                <button class="btn-3d btn-small"><i class="fas fa-bell"></i> Set Reminder</button>
+            </div>
+            
+            <div class="important-match card-3d">
+                <div class="match-highlight">
+                    <span class="highlight-tag">Cup Final</span>
+                    <h3>FA Cup Final</h3>
+                </div>
+                <div class="match-teams">
+                    <div class="team">
+                        <div class="team-logo">BR</div>
+                        <img src="images/Bo_rangers.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                        <h4>Bo Rangers</h4>
+                    </div>
+                    <div class="vs">VS</div>
+                    <div class="team">
+                        <h4>Ports Authority</h4>
+                        <div class="team-logo">PA</div>
+                        <img src="images/port authority.jpeg" alt="Football Agency Sierra Leone Logo" class="logo-img">
+                    </div>
+                </div>
+                <div class="match-details">
+                    <p><i class="far fa-calendar"></i> Jan 15, 2026 | 16:00 GMT</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Siaka Stevens Stadium</p>
+                </div>
+                <button class="btn-3d btn-small"><i class="fas fa-bell"></i> Set Reminder</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="images/logo.png" alt="Football Agency Sierra Leone Logo">
+                </div>
+                <p>Connecting Sierra Leonean football talent with global opportunities since 2010.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Football Avenue, Freetown</p>
+                    <p><i class="fas fa-phone"></i> +232 25 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@footballagencysl.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Football Agency Sierra Leone. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
