@@ -23,7 +23,9 @@ It demonstrates HTML, CSS, and JavaScript skills to build a responsive and funct
 
 ## Screenshots
 
+<img width="1336" height="645" alt="HOME PAGE OF WEBSITE" src="https://github.com/user-attachments/assets/67dfb02c-fff6-4e34-b405-f8978dbe0d84" />
 
+<img width="1334" height="637" alt="PLAYERS PAGE WEBSITE" src="https://github.com/user-attachments/assets/093d9d41-377b-4eca-a704-9d735759c130" />
 
 ## How to Run
 1. Clone the repository:
