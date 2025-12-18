@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players - Football Agency Sierra Leone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="image/logo.webp" alt="Football Agency Sierra Leone Logo" class="logo-img">
+            <div class="logo-text">
+                <span class="logo-main">Football Agency</span>
+                <span class="logo-sub">Sierra Leone</span>
+            </div>
+        </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="players.html" class="active"><i class="fas fa-users"></i> Players</a></li>
+            <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Players Hero -->
+    <section class="page-hero">
+        <div class="hero-background">
+            <img src="images/team-group.jpg" alt="Football team group photo" class="hero-bg-img">
+        </div>
+        <div class="hero-content">
+            <h1>Our Players</h1>
+            <p>Discover the talented footballers we represent. From emerging talents to established stars.</p>
+        </div>
+    </section>
+
+    <!-- Player Search & Filters -->
+    <section class="section">
+        <div class="player-filters">
+            <div class="search-box">
+                <input type="text" id="playerSearch" placeholder="Search players by name, position, or club...">
+                <i class="fas fa-search"></i>
+            </div>
+            
+            <div class="filter-options">
+                <select id="positionFilter">
+                    <option value="">All Positions</option>
+                    <option value="forward">Forward</option>
+                    <option value="midfielder">Midfielder</option>
+                    <option value="defender">Defender</option>
+                    <option value="goalkeeper">Goalkeeper</option>
+                </select>
+                
+                <select id="ageFilter">
+                    <option value="">All Ages</option>
+                    <option value="u20">Under 20</option>
+                    <option value="20-25">20-25</option>
+                    <option value="25-30">25-30</option>
+                    <option value="30+">30+</option>
+                </select>
+                
+                <select id="statusFilter">
+                    <option value="">All Status</option>
+                    <option value="available">Available</option>
+                    <option value="contracted">Contracted</option>
+                    <option value="injured">Injured</option>
+                    <option value="on-loan">On Loan</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+    <!-- Players Grid -->
+    <section class="section section-light" id="featured">
+        <div class="section-title">
+            <h2>Player Profiles</h2>
+            <p>Browse our complete roster of professional footballers</p>
+        </div>
+        <div class="players-grid">
+            <!-- Player 1 -->
+            <div class="player-profile card-3d" id="player1" data-position="forward" data-age="22" data-status="contracted">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/kei kamara.jpeg" alt="Mohamed kie Kamara - Forward">
+                        <span class="player-number">9</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>Mohamed kie Kamara</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Forward</span>
+                            <span class="tag status available">Available</span>
+                            <span class="tag rating">★★★★☆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">22</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">185 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">78 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">15</span>
+                        <span class="stat-label">Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">7</span>
+                        <span class="stat-label">Assists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">28</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2024-Present</span>
+                            <span class="club">Bo Rangers FC</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2022-2024</span>
+                            <span class="club">East End Lions</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2020-2022</span>
+                            <span class="club">Mighty Blackpool</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=Mohamed kie Kamara" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+
+            <!-- Player 2 -->
+            <div class="player-profile card-3d" id="player2" data-position="defender" data-age="24" data-status="contracted">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/caulker.jpeg" alt="caulker - Defender">
+                        <span class="player-number">5</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>caulker</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Defender</span>
+                            <span class="tag status contracted">Contracted</span>
+                            <span class="tag rating">★★★★★</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">24</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">192 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">85 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">3</span>
+                        <span class="stat-label">Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Clean Sheets</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">30</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2023-Present</span>
+                            <span class="club">East End Lions</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2021-2023</span>
+                            <span class="club">Kamboi Eagles</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2019-2021</span>
+                            <span class="club">Ports Authority FC</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=caulker" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+
+            <!-- Player 3 -->
+            <div class="player-profile card-3d" id="player3" data-position="midfielder" data-age="19" data-status="available">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/Alhassan.jpeg" alt="Alhassan Koroma - Midfielder">
+                        <span class="player-number">10</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>Alhassan Koroma</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Midfielder</span>
+                            <span class="tag status available">Available</span>
+                            <span class="tag rating">★★★☆☆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">19</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">178 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">72 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">8</span>
+                        <span class="stat-label">Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">15</span>
+                        <span class="stat-label">Assists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">25</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2024-Present</span>
+                            <span class="club">Youth Academy</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2022-2024</span>
+                            <span class="club">Freetown United</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=Alhassan koroma" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+
+            <!-- Player 4 -->
+            <div class="player-profile card-3d" id="player4" data-position="goalkeeper" data-age="27" data-status="injured">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/goal keeper.jpeg" alt="Alusine Conteh - Goalkeeper">
+                        <span class="player-number">1</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>Alusine Conteh</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Goalkeeper</span>
+                            <span class="tag status injured">Injured</span>
+                            <span class="tag rating">★★★★☆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">27</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">195 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">88 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">18</span>
+                        <span class="stat-label">Clean Sheets</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">45</span>
+                        <span class="stat-label">Saves</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">32</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2022-Present</span>
+                            <span class="club">Bo Rangers FC</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2019-2022</span>
+                            <span class="club">Mighty Blackpool</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2017-2019</span>
+                            <span class="club">Kono Youth</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=Alusine Conteh" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+
+            <!-- Player 5 -->
+            <div class="player-profile card-3d" id="player5" data-position="midfielder" data-age="21" data-status="on-loan">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/mustapha bundu.jpeg" alt="Mustapha bundu - Midfielder">
+                        <span class="player-number">8</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>Mustapha bundu</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Midfielder</span>
+                            <span class="tag status on-loan">On Loan</span>
+                            <span class="tag rating">★★★☆☆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">21</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">180 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">75 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">6</span>
+                        <span class="stat-label">Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">10</span>
+                        <span class="stat-label">Assists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">28</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2024-Present</span>
+                            <span class="club">Ports Authority (Loan)</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2022-2024</span>
+                            <span class="club">East End Lions</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=mustapha bundu" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+
+            <!-- Player 6 -->
+            <div class="player-profile card-3d" id="player6" data-position="forward" data-age="23" data-status="available">
+                <div class="player-header">
+                    <div class="player-img">
+                        <img src="image/alimamy.jpeg" alt="Alimamy Conteh - Forward">
+                        <span class="player-number">11</span>
+                    </div>
+                    <div class="player-basic-info">
+                        <h3>Alimamy Conteh</h3>
+                        <div class="player-tags">
+                            <span class="tag position">Forward</span>
+                            <span class="tag status available">Available</span>
+                            <span class="tag rating">★★★★☆</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-details">
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-birthday-cake"></i> Age</span>
+                        <span class="detail-value">23</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-ruler"></i> Height</span>
+                        <span class="detail-value">182 cm</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-weight"></i> Weight</span>
+                        <span class="detail-value">76 kg</span>
+                    </div>
+                    <div class="detail-row">
+                        <span class="detail-label"><i class="fas fa-flag"></i> Nationality</span>
+                        <span class="detail-value">Sierra Leone</span>
+                    </div>
+                </div>
+                
+                <div class="player-stats">
+                    <div class="stat-item">
+                        <span class="stat-value">12</span>
+                        <span class="stat-label">Goals</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Assists</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">26</span>
+                        <span class="stat-label">Matches</span>
+                    </div>
+                </div>
+                
+                <div class="club-history">
+                    <h4>Club History</h4>
+                    <div class="history-timeline">
+                        <div class="history-item">
+                            <span class="year">2023-Present</span>
+                            <span class="club">Kamboi Eagles</span>
+                        </div>
+                        <div class="history-item">
+                            <span class="year">2021-2023</span>
+                            <span class="club">Freetown United</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="player-actions">
+                    <button class="btn-3d btn-small view-profile">Full Profile</button>
+                    <a href="contact.html?player=Alimamy conteh" class="btn-3d btn-small btn-secondary">Contact Agent</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn">Next <i class="fas fa-arrow-right"></i></button>
+        </div>
+    </section>
+
+    <!-- Scouting Section -->
+    <section class="section" id="scouting">
+        <div class="section-title">
+            <h2>Scouting Reports</h2>
+            <p>Latest talent assessments from our scouting network</p>
+        </div>
+        <div class="scouting-reports">
+            <div class="scouting-report card-3d">
+                <div class="report-header">
+                    <img src="image/scout.webp"Youth player in action">
+                    <div class="report-badge">Hot Prospect</div>
+                </div>
+                <div class="report-content">
+                    <h3>Mustapha Kamara</h3>
+                    <p class="report-position">Midfielder | Age: 17</p>
+                    <p class="report-summary">Exceptional ball control and vision. Top prospect from Freetown Youth Academy.</p>
+                    <div class="report-stats">
+                        <span><strong>Potential:</strong> 8.5/10</span>
+                        <span><strong>Scout:</strong> M. Bangura</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scouting-report card-3d">
+                <div class="report-header">
+                    <img src="image/kp.webp" alt="Goalkeeper saving">
+                    <div class="report-badge">New Discovery</div>
+                </div>
+                <div class="report-content">
+                    <h3>Saidu Bah</h3>
+                    <p class="report-position">Goalkeeper | Age: 18</p>
+                    <p class="report-summary">Remarkable reflexes and command of area. Discovered in Bo District trials.</p>
+                    <div class="report-stats">
+                        <span><strong>Potential:</strong> 7.5/10</span>
+                        <span><strong>Scout:</strong> A. Conteh</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scouting-report card-3d">
+                <div class="report-header">
+                    <img src="image/222.webp" alt="Defender tackling">
+                    <div class="report-badge">Rising Star</div>
+                </div>
+                <div class="report-content">
+                    <h3>Mohamed Turay</h3>
+                    <p class="report-position">Defender | Age: 19</p>
+                    <p class="report-summary">Strong tackling and aerial ability. Currently playing for Kenema Youth.</p>
+                    <div class="report-stats">
+                        <span><strong>Potential:</strong> 8.0/10</span>
+                        <span><strong>Scout:</strong> I. Sesay</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <img src="image/logo.webp" alt="Football Agency Sierra Leone Logo">
+                </div>
+                <p>Connecting Sierra Leonean football talent with global opportunities since 2010.</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Football Avenue, Freetown</p>
+                    <p><i class="fas fa-phone"></i> +232 25 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@footballagencysl.com</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="players.html"><i class="fas fa-users"></i> Players</a></li>
+                    <li><a href="matches.html"><i class="fas fa-futbol"></i> Matches</a></li>
+                    <li><a href="about.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+                <div class="newsletter">
+                    <p>Subscribe to our newsletter</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Football Agency Sierra Leone. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
